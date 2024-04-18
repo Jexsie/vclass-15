@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - The Wild UG</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Style for About Us page */
+      body {
+        background-color: whitesmoke;
+      }
+      main {
+        margin: 0;
+        padding: 0;
+        color: black;
+        font-family: Poppins, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      .about-us-container {
+        text-align: center;
+        max-width: 700px;
+        padding: 20px;
+      }
+
+      h2 {
+        margin-top: 50px;
+        font-size: 24px;
+        font-weight: 600;
+        display: inline-block;
+        padding-bottom: 10px;
+        position: relative;
+      }
+
+      h2::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 70%; /* Adjust this percentage to control the width of the border */
+        border-bottom: 5px solid #e2562a;
+      }
+      p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 10px 0;
+        text-align: left;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 20px 0;
+        text-align: left;
+      }
+
+      li {
+        margin: 10px 0;
+      }
+
+      button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: 600;
+        background-color: #f1683a;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #e2562a;
+      }
+      nav a {
+        color: black;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        margin-bottom: 50px;
+      }
+      #redirect {
+        color: #e2562a;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="contacts.html">Contacts</a>
+        <a href="info.html">Info</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="about-us-container">
+        <img src="image/about-us.jpg" alt="about us" />
+
+        <section>
+          <p>
+            The Wild UG is a leading travel and adventure company based in
+            Kampala, Uganda. We specialize in creating unforgettable experiences
+            for our clients by offering tailored travel packages and adventure
+            tours across the stunning landscapes of East Africa.
+          </p>
+
+          <p>
+            Our passion for adventure and commitment to providing exceptional
+            service make us the go-to choice for travelers seeking a unique and
+            immersive experience in Uganda and beyond. Whether you're looking
+            for a safari in national parks, a hike through lush rainforests, or
+            a serene boat ride on Lake Victoria, The Wild UG has something for
+            everyone.
+          </p>
+
+          <h2>Our Mission</h2>
+          <p>
+            Our mission is to offer clients an unparalleled opportunity to
+            explore and enjoy the natural beauty of East Africa. We strive to
+            create journeys that not only provide excitement and wonder but also
+            respect the environment and local cultures.
+          </p>
+
+          <h2>Our Values</h2>
+          <ul>
+            <li>
+              <strong>Excellence:</strong> We prioritize exceptional service and
+              high-quality experiences for our clients, ensuring their
+              satisfaction every step of the way.
+            </li>
+            <li>
+              <strong>Integrity:</strong> We operate with honesty and
+              transparency, building trust with our clients and partners.
+            </li>
+            <li>
+              <strong>Sustainability:</strong> We are committed to eco-friendly
+              practices and preserving the environment for future generations.
+            </li>
+            <li>
+              <strong>Innovation:</strong> We continuously seek new and exciting
+              ways to provide our clients with unique travel experiences.
+            </li>
+          </ul>
+
+          <h2>Our Team</h2>
+          <p>
+            Our team consists of passionate and experienced professionals who
+            are dedicated to making your journey with us extraordinary. From
+            travel experts to knowledgeable guides, we are here to ensure your
+            adventure is safe, enjoyable, and memorable. Our staff is always
+            ready to answer your questions and provide personalized service to
+            make your trip as smooth and enjoyable as possible.
+          </p>
+
+          <h2>Our Partners</h2>
+          <p>
+            We work with a network of trusted partners and suppliers to deliver
+            top-notch travel experiences. These partnerships enable us to offer
+            exclusive access to some of the region's most sought-after
+            attractions and experiences.
+          </p>
+
+          <h2>Commitment</h2>
+          <p>
+            The Wild UG is dedicated to sustainable tourism practices that
+            protect the environment and benefit local communities. We support
+            conservation efforts and work closely with local organizations to
+            ensure that our tours have a positive impact on the regions we
+            visit.
+          </p>
+
+          <h2>Contact Us</h2>
+          <p>
+            If you have any questions or want to learn more about our offerings,
+            please feel free to
+            <a id="redirect" href="contacts.html">contact us</a>. We look
+            forward to helping you plan your next adventure!
+          </p>
+
+          <p><strong>Ready to embark on your next adventure?</strong></p>
+          <button onclick="window.location.href='contacts.html'">
+            Get in touch with us!
+          </button>
+        </section>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
